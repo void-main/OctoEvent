@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = "octo-event"
-  s.version           = "0.1.0"
+  s.version           = "0.1.1"
   s.date              = "2013-05-18"
   s.summary           = "Grab activity events for you from Octocat"
   s.homepage          = "https://github.com/void-main/OctoEvent"
@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.require_path      = "lib"
   s.files             = %w( README.md LICENSE )
   s.files            += Dir.glob("lib/**/*")
+  s.add_development_dependency 'httpclient', '~> 2.3.3'
   s.add_runtime_dependency 'httpclient', '~> 2.3.3'
   s.description       = <<-desc
   Grab activity events for you from Octocat
