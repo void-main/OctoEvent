@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.homepage          = "https://github.com/void-main/OctoEvent"
   s.email             = "voidmain1313113@gmail.com"
   s.authors           = ["Peng Sun"]
-  s.has_rdoc          = false
+  s.has_rdoc          = true
   s.require_path      = "lib"
   s.files             = %w( README.md LICENSE )
   s.files            += Dir.glob("lib/**/*")
