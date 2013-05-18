@@ -73,7 +73,7 @@ class OctoEvent
   private
   # Composed path for github
   def path_for name, type
-    "#{type}s/#{name}"
+    "#{type}/#{name}"
   end
 
   # Use json as config to make the users dynamiclly changable
@@ -84,7 +84,7 @@ class OctoEvent
     obj.each do |target|
       name = target["name"]
       type = target["type"]
-      target_array << "#{type}s/#{name}"
+      target_array << path_for(name, type)
     end
   end
 
