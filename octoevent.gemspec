@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name              = "OctoEvent"
+  s.name              = "octoevent"
   s.version           = "0.1.0"
   s.date              = "2013-05-18"
   s.summary           = "Grab activity events for you from Octocat"
