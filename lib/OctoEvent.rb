@@ -59,7 +59,6 @@ class OctoEvent
       update_target if @config_url
 
       result = {}
-      puts target_array
       target_array.each do |target|
         events = events_for target, acceptable_events
         result[target] = events unless events.empty?
@@ -100,7 +99,6 @@ class OctoEvent
     page = 1
     while page <= 10
       result = @clnt.get(url, {client_id: @client_id, client_secret: @client_secret}, {"If-None-Match" => etag})
-      puts result.body
       break unless result.status_code == 200
       events = JSON.load result.body
       if page == 1 # etag and last event should be set when querying the very first page
